@@ -18,7 +18,7 @@ import Paper from '@mui/material/Paper';
 function App() {
   const [tds, settds] = useState([])
   useEffect(() => {
-    axios.get('https://pear-cautious-llama.cyclic.app/tds')
+    axios.get('https://react-dashboard3-alpha.vercel.app/')
       .then(res => {
         console.log(res.data)
         settds(res.data)
@@ -55,7 +55,6 @@ function App() {
               <TableCell>TDS</TableCell>
               <TableCell>TIME</TableCell>
               <TableCell>DATE</TableCell>
-
             </TableRow>
           </TableHead>
           <TableBody>
